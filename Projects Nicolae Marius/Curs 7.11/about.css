@@ -56,5 +56,8 @@ a{
     top: 15%;
     padding-top: 30px;
 }
-
+button{
+    block-size: 30px;
+    width: 60px;
+}
 
