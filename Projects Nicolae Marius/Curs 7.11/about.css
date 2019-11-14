@@ -18,19 +18,19 @@ body{
 a{
     box-align: center;
     text-decoration: none;
-    color: red;
+    color: black;
 }
 #imagine3{
-    width: 25%;
+    width: 20%;
     margin: 0;
 }
 #imagine7{
-    width: 25%;
+    width: 20%;
     margin: 0;
     float: right;
 }
 #continut1-text{
-    /* border: 1px solid black; */
+    /* border: 1px solid black;  */
     width: 800px;
     height: 200px;
     position: absolute;
