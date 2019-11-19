@@ -1,3 +1,6 @@
+body{
+    box-sizing: border-box;
+}
 .prim{
     font-weight: normal;
     font-family: 'Indie Flower', cursive;
@@ -13,7 +16,7 @@
     font-family: 'Roboto', sans-serif;
     text-decoration: underline;
     line-height: 1.5em;
-    text-align: justify;
+    text-align: left;
     border: 0.1em solid darkcyan;
     padding: 0.5em;
     margin: 1.3em 0;
@@ -29,6 +32,22 @@
     width: 70%;
     height: 100px;
     margin: 0 auto;
-    color: white;
-    background-image: url(https://github.com/miezuit/html_css_training/blob/master/starbuzz/images/background.gif);
+    color: black;
+    background-color: tan;
+    background-image: url(background.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.third span{
+    color: coral;
+}
+div{
+    background-color: burlywood;
+    padding: 10px;
+    border: 1px solid blue;
+}
+div div{
+    background-color: coral;
+    width: fit-content;
+    border: 1px solid black;
 }
