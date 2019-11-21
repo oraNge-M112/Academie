@@ -1,0 +1,9 @@
+div.float{
+    float: right;
+    background-color: lightblue;
+    width: 100px;
+    height: 50px;
+}
+div{
+    background-color: lightgreen;
+}
