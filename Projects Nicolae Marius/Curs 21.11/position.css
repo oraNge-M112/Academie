@@ -1,0 +1,43 @@
+body{
+    height: 1000px;
+}
+div div{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle; /* tip to vertical align */
+    line-height: 100px;
+}
+div div:first-child{
+    color: black;
+    background-color: coral;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    z-index: 1;
+}
+div div:nth-child(2){
+    background-color: cadetblue;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+}
+div div:nth-child(3){
+    background-color: lightsteelblue;
+    position: sticky;
+    top: 5%;
+    left: 5%;
+}
+div div:last-child{
+    background-color: green;
+    color: white;
+    position: relative;
+    bottom: 10px;
+    left: 50%;
+}
+.container{
+    background-color: burlywood;
+    position: relative;
+    width: 300px;
+    left: 30%;
+}
