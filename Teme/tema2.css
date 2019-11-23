@@ -1,0 +1,92 @@
+body{
+    background-color: #03312E;
+    font-family: sans-serif;
+}
+.tot{
+    margin: 0 auto;
+    width: 70%;
+    height: 50em;
+}
+.header p{
+    position: absolute;
+    left: 27%;
+    top: 3.9%;
+    color: thistle;
+}
+.header h1{
+    color: white;
+}
+nav{
+    background-color: #073B3A;
+    height: 3em;
+    line-height: 2em;
+    padding-top: 1em;
+}
+nav li{
+    list-style: none;
+    float: left;
+    padding: 0 3em;
+    border-right: 1px solid white;
+    vertical-align: middle;
+    font-size: 1.1em;
+    color: white;
+}
+nav li:last-child{
+    border-right: none;
+}
+.about{
+    background-color: #037171;
+    margin-top: 0.5em;
+    padding-bottom: 1em;
+    color: white;
+}
+.about img{
+    width: 10%;
+    position: absolute;
+    left: 19%;
+    top: 28%;
+}
+.about h1,p{
+    position: relative;
+    left: 30%;
+    width: 45%;
+}
+.stanga{
+    position: relative;
+    width: 20%;
+    height: 55.5%;
+    background-color: #6BBF59;
+}
+.stanga li{
+    color: white;
+    font-size: 0.9em;
+    list-style: none;
+    border-bottom: 1px solid black;
+    width: 9em;
+    padding: 0.7em 0em;
+}
+.stanga li:first-child{
+    padding-top: 2em;
+}
+.stanga li:last-child{
+    border-bottom: none;
+}
+.dreapta{
+    position: relative;
+    top: -58.2%;
+    left: 20%;
+    background-color: #DDB771;
+    width: 80%;
+    height: 55.5%;
+}
+.dreapta h1{
+    position: relative;
+    left: 10%;
+    top: 7%;
+    color: teal;
+}
+.dreapta p{
+    position: relative;
+    left: 10%;
+    top: 12%;
+}
