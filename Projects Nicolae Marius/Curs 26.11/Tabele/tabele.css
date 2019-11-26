@@ -1,0 +1,28 @@
+body{
+    background-color: lightgrey;
+}
+table, th{
+    border: 2px solid salmon;
+}
+table{
+    border: 2px solid salmon;
+    margin: 10em auto;
+    background-color: white;
+    border-collapse: collapse;
+    text-align: center;
+}
+th{
+    background-color: lightsteelblue;
+    width: 6em;
+}
+td{
+    border: 1px solid salmon;
+    padding: 10px;
+    width: 100px;
+}
+td:nth-child(2n){
+    background-color: lightskyblue;
+}
+td:nth-child(2n+1){
+    background-color: lightyellow;
+}

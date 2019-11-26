@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;;
+}
 body{
     background-color: #03312E;
     font-family: sans-serif;
@@ -56,13 +59,14 @@ nav li:last-child{
     width: 20%;
     height: 55.5%;
     background-color: #6BBF59;
+    padding-right: 5em;
 }
 .stanga li{
     color: white;
     font-size: 0.9em;
     list-style: none;
     border-bottom: 1px solid black;
-    width: 9em;
+    width: 8em;
     padding: 0.7em 0em;
 }
 .stanga li:first-child{
@@ -89,4 +93,6 @@ nav li:last-child{
     position: relative;
     left: 10%;
     top: 12%;
+}.head2 nav li:last-child{
+    border-right: none;
 }

@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+input{
+    display: block;
+    padding: 1em 2em;
+    margin: 1em;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+}
+input[type=text]{
+    width: 95%;
+}
+select{
+    width: 95%;
+    margin: 1em;
+    padding: 1em;
+    font-size: 1em;
+}
+label{
+    margin-left: 1em;
+}
+form{
+    background-color: lightgray;
+    width: 60%;
+    margin: auto;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+input[type=submit]{
+    background-color: limegreen;
+    width: 95%;
+    color: white;
+    padding: 10px;
+    font-size: 0.9em;
+    background:linear-gradient(90deg, purple, red);
+}
+input[type=submit]:hover{
+    /* background-color: peru; */
+    opacity: 0.8;
+    color: black;
+}
