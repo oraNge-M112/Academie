@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+}
+#tab1{
+    border-collapse: collapse;
+    width: 50%;
+    text-align: left;
+}
+#tab1 th, td{
+    padding: 0.4em 1em;
+}
+#tab1 tr:first-child{
+    background-color: coral;
+    color: white;
+}
+#tab1 tr:nth-child(2n+3){
+    background-color: white;
+}
+#tab1 tr:nth-child(2n+2){
+    background-color: lightgray;
+}

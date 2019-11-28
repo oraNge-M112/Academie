@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 20%;
+    height: 80%;
+    margin: auto;
+    color: gray;
+}
+h1{
+    color: black;
+}
+input, label{
+    display: block;
+}
+input{
+    border: none;
+    border-bottom: 2px solid lightgray;
+    margin-bottom: 1.5em;
+}
+textarea{
+    border: none;
+    border-bottom: 2px solid lightgray;
+    resize: none;
+}
+#send{
+    border-radius: 1.5em;
+    width: 13em;
+    height: 2.5em;
+    margin: auto;
+    margin-top: 2em;
+    color: white;
+    background: rgb(217,66,247);
+    background: linear-gradient(55deg, rgba(217,66,247,1) 7%, rgba(236,74,74,1) 36%, rgba(241,89,48,1) 100%);
+}
+::placeholder{
+    opacity: 0.4;
+    font-size: 1em;
+}

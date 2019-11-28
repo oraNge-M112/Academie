@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    border: 3px solid orange;
+    width: 50%;
+    margin: auto;
+    padding: 1em;
+}
+input, select{
+    margin-bottom: 0.7em;
+    margin-top: 0.7em;
+}
