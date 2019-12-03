@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      progress {
+        appearance: none;
+        -webkit-appearance: none;
+      }
+      progress::-webkit-progress-bar {
+        background-color: lightgray;
+        border-radius: 3px;
+      }
+      progress::-webkit-progress-value {
+        background-color: darkcyan;
+        border-radius: 3px;
+      }
+      progress::-webkit-progress-inner-element {
+        color: white;
+      }
+      meter::-webkit-meter-bar {
+        background: #eee;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2) inset;
+        border-radius: 3px;
+      }
+      meter::-webkit-meter-optimum-value {
+        background: #86cc00; /* Green */
+        border-radius: 3px;
+      }
+      meter::-webkit-meter-suboptimum-value {
+        background: #ffdb1a; /* Yellow */
+        border-radius: 3px;
+      }
+      meter::-webkit-meter-even-less-good-value {
+        background: #cc4600; /* Red */
+        border-radius: 3px;
+      }
+      a:link{
+          color: green;
+      }
+      a:visited{
+          color: red;
+      }
+      a:hover{
+          size: 110%;
+          font-weight: bold;
+      }
+      a{
+          text-decoration: underline;
+          cursor: cell;
+          text-decoration-color: blue;
+      }
+      ::selection{
+          background-color: black;
+          color: white;
+      }
+      ::first-letter{
+          text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <progress value="55" max="100">asdasdasd</progress> <br/>
+    <meter min="0" max="100" low="25" high="75" optimum="50" value="10"></meter>
+    <nav>
+        <li><a href="#">ASD</a></li>
+        <li><a href="#">bsc</a></li>
+        <li><a href="#">qweqwe</a></li>
+        <li><a href="#">zxczxc</a></li>
+    </nav>
+</body>
+</html>
