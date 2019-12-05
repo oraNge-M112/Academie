@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: sans-serif;
+  --my-color: rgb(242, 115, 59);
+}
+nav {
+  background-color: var(--my-color);
+  text-align: right;
+}
+nav li:first-child {
+  font-size: 1.2em;
+}
+li {
+  display: inline-block;
+  padding: 0.5em;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+#home {
+  background-image: url(https://raw.githubusercontent.com/miezuit/html_css_training/master/images/headerback.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#overlay {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 100%;
+  /* width: 100%; */
+  z-index: 1;
+}
+#container {
+  position: absolute;
+  width: 75%;
+  height: 25%;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#container h2 {
+  font-size: 2.3em;
+  color: var(--my-color);
+}
+#home p {
+  color: rgb(85, 85, 85);
+  padding: 1em 0;
+  font-size: 1.2em;
+  width: 60%;
+  font-family: "DIN Alternate", Verdana, Geneva, Tahoma, sans-serif;
+}
+#container input[type="button"] {
+  background-color: var(--my-color);
+  border-radius: 5px;
+  font-size: 1.4em;
+  color: white;
+  border-style: none;
+  padding: 0.3em;
+}
