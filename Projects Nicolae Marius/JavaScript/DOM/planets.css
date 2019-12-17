@@ -1,0 +1,17 @@
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+#greenplanet {
+  background-color: greenyellow;
+}
+#blueplanet {
+  background-color: cyan;
+}
+#redplanet {
+  background-color: brown;
+}
+p {
+  color: black;
+}
