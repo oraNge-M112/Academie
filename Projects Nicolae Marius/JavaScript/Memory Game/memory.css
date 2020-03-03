@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+body {
+  text-align: center;
+}
+li {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  margin: 3px;
+  background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/wild_oliva.png);
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+img {
+  visibility: hidden;
+}
+input[type="button"] {
+  background-color: cornflowerblue;
+  padding: 0.5em;
+  color: white;
+  border-radius: 10%;
+  font-size: 1.3em;
+  margin: 15px 0;
+}
