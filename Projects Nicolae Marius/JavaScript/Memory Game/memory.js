@@ -40,3 +40,9 @@ for (i = 0; i < images.length; i++) {
 }
 
 document.querySelector("ul").innerHTML = content;
+
+document
+  .querySelectorAll("li")
+  .forEach(x => x.addEventListener("click", onClick));
+
+function onClick(event) {}
