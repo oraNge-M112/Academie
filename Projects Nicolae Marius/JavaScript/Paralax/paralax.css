@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-x: scroll;
+  perspective: 8px;
+  perspective-origin: 50%;
+}
+.front {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translateZ(3px) scaleZ(0.625);
+}
+.gear {
+  position: absolute;
+  top: 70%;
+  right: 30%;
+  transform: translateZ(4px) scaleZ(0.5);
+}
+.gear img {
+  width: 200px;
+}
+.back {
+  transform: translateZ(0px);
+}
+.back img {
+  height: 2000px;
+}
+h1 {
+  font-size: 35px;
+}
