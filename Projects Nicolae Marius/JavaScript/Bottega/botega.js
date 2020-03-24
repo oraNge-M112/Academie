@@ -9,6 +9,12 @@ function textToSpan() {
   });
   title.innerHTML = "";
   spans.forEach(span => title.appendChild(span));
+  return spans;
 }
 
-textToSpan();
+let spans = textToSpan();
+spans.sort(function() {
+  return 0.5 - Math.random();
+});
+let spanToAnimate = spans.slice(0, 5);
+spanToAnimate.forEach(span => span.classList.add("bounce"));

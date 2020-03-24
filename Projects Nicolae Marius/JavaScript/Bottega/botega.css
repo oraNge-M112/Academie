@@ -17,17 +17,84 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+}
+.portofolio {
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(205, 92, 92);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pictures {
+  width: 80%;
+  text-align: center;
+}
+.pictures img {
+  width: 200px;
+  height: 300px;
 }
 .title {
+  margin-top: 1em;
   font-size: 7em;
   font-weight: 900;
   color: white;
   font-family: "Libre Baskerville", serif;
 }
-.enter {
+.enter,
+.back {
   font-family: "Libre Baskerville", sans-serif;
   color: white;
   font-size: 2em;
+  margin-top: 1em;
+  position: relative;
+  cursor: pointer;
+  width: fit-content;
   text-align: center;
-  margin-top: 3em;
+}
+.enter::after,
+.back::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  background-color: white;
+  width: 0;
+  opacity: 0;
+  transition-property: width, opacity;
+  transition-duration: 500ms;
+}
+.enter:hover::after,
+.back:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+@keyframes bounce {
+  from {
+    top: 0;
+    color: white;
+  }
+  to {
+    top: -0.7em;
+    color: black;
+  }
+}
+.title span {
+  position: relative;
+}
+.title span.bounce {
+  animation-name: bounce;
+  animation-duration: 500ms;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
 }
