@@ -12,9 +12,21 @@ function textToSpan() {
   return spans;
 }
 
-let spans = textToSpan();
-spans.sort(function() {
-  return 0.5 - Math.random();
-});
+function suffle(array) {
+  array.sort(() => 0.5 - Math.random());
+}
+
+let originalSpans = textTospan();
+let oddOrEven = Math.round(Math.random());
+let spans = originalSpans.filter((value, index) => index % 2 == oddOrEven);
+suffle(spans);
 let spanToAnimate = spans.slice(0, 5);
 spanToAnimate.forEach(span => span.classList.add("bounce"));
+
+function slideOut() {
+  document.querySelector(".enter").classList.add("slide-out")
+  document.querySelector(".enter").classList.remove("slide-in");
+}
+
+document.querySelector(".enter").addEventListener("click", slideOut);
+document.querySelector(".back").addEventListener("click", slideIn);

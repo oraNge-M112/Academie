@@ -22,16 +22,18 @@ main {
   left: 0;
   z-index: 1;
   opacity: 0;
+  transition-duration: 2000ms;
+  transition-property: left;
 }
 .portofolio {
   width: 100vw;
   height: 100vh;
-  z-index: 0;
-  position: fixed;
+  z-index: -1;
+  /* position: fixed; */
   top: 0;
   left: 0;
   background-color: rgb(205, 92, 92);
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
 }
@@ -97,4 +99,10 @@ main {
   animation-duration: 500ms;
   animation-direction: alternate;
   animation-iteration-count: 2;
+}
+.slide-out {
+  left: 100vw;
+}
+.slide-in {
+  left: 0;
 }
