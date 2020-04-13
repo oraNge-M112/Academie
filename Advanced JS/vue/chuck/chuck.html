@@ -13,8 +13,10 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
   <body>
-      <div id="app">
-          {{ fact }}
-      </div>
+    <div id="app">
+      {{ fact }}
+      <br />
+      <button v-on:click="getAnother">Find another</button>
+    </div>
   </body>
 </html>
