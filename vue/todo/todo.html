@@ -12,9 +12,12 @@
   <div id='app'>
     <h1>To do: </h1>
     <ul>
-      <li v-for='todo in todos'>
-        {{ todo }}
-      </li>
+      <task
+        v-for="todo in todos"
+        :title="todo.title"
+        :is-done="todo.isDone">
+
+      </task>
     </ul>
     <div class="new-task">
       <div>Task:</div> 
