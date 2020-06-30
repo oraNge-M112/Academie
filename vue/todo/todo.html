@@ -1,31 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="todo.js" defer></script>
-  <link rel="stylesheet" href="todo.css">
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-</head>
-<body>
-  <div id='app'>
-    <h1>To do: </h1>
-    <ul>
-      <task
-        v-for="todo in todos"
-        :title="todo.title"
-        :is-done="todo.isDone">
-
-      </task>
-    </ul>
-    <div class="new-task">
-      <div>Task:</div> 
-      <input type="text" v-model='task' @keyup.enter='addItem'>
-      <div>
-        <button @click='addItem'>Save item</button>
-      </div>
-    </div>
-  </div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="todo.js" defer></script>
+		<link rel="stylesheet" href="todo.css" />
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<todo-list></todo-list>
+		</div>
+	</body>
 </html>
