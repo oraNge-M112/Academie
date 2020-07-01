@@ -3,6 +3,7 @@ class Todo {
 		this.title = title;
 		this.isDone = false;
 		this.color = this.randomColor();
+		this.editable = false;
 	}
 	switchDone() {
 		this.isDone = !this.isDone;
