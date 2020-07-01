@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script type="module" src="forms.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<label for="name">Nume:</label>
+			<input type="text" name="name" id="name" v-model="name" />
+
+			<label for="age">Varsta:</label>
+			<input type="number" name="age" id="age" v-model="age" />
+
+			<label for="framework">Select fav framework</label>
+			<select name="framework" v-model="framework">
+				<option>Vue.js</option>
+				<option>React.js</option>
+				<option>Angular.js</option>
+			</select>
+
+      <input type="submit" value="Send" @click="validate" />
+      
+      <p v-if="hasError">
+        <p>Please solve the errors:</p>
+        <ul>
+          <li v-for="error in errors">{{ error }}</li>
+        </ul>
+      </p>
+		</div>
+	</body>
+</html>
