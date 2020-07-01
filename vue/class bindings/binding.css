@@ -1,0 +1,9 @@
+div {
+	color: purple;
+}
+
+.active {
+	color: orange;
+	font-family: serif;
+	font-size: 2em;
+}
