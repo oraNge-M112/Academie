@@ -1,0 +1,28 @@
+.game {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rod {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  position: relative;
+}
+
+.rod::before {
+  content: '';
+  display: block;
+  background-color: peru;
+  position: absolute;
+  width: 1em;
+  top: -2em;
+  bottom: 0em;
+}
+
+.disk {
+  border-radius: 10px;
+  z-index: 1;
+}

@@ -1,0 +1,32 @@
+.drag {
+  font-family: sans-serif;
+  height: 2em;
+  width: 5em;
+  background-color: antiquewhite;
+  color: orange;
+  border-radius: 10%;
+  line-height: 2em;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.container {
+  width: 8em;
+  height: 4em;
+  background-color: paleturquoise;
+  border-radius: 10%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#c1 {
+  top: 10em;
+  left: 10em;
+}
+
+#c2 {
+  top: 20em;
+  left: 20em;
+}
