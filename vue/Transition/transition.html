@@ -6,6 +6,10 @@
 		<title>Document</title>
 		<link rel="stylesheet" href="transition.css" />
 		<script type="module" src="transition.js" defer></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+		/>
 	</head>
 	<body>
 		<div id="app">
@@ -22,8 +26,8 @@
 			<transition-group name="fade" tag="ul">
 				<span v-for="number in numbers" :key="number"> {{ number }} </span>
 			</transition-group>
-			<input type="button" value="Add" @click="add" /> 
-			<input type="button" value="Remove" @click="remove" /> 
-    </div>
+			<input type="button" value="Add" @click="add" />
+			<input type="button" value="Remove" @click="remove" />
+		</div>
 	</body>
 </html>
